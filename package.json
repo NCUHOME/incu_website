@@ -17,7 +17,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router": "^5.2.0",
-    "react-spring": "^8.0.27",
+    "react-spring": "^9.0.0-rc.3",
     "react-static": "^7.2.0",
     "react-static-plugin-reach-router": "^7.2.0",
     "react-static-plugin-sitemap": "^7.2.0",

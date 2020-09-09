@@ -1,7 +1,6 @@
 # OSX
 #
 .DS_Store
-
 # Xcode
 #
 build/
@@ -63,3 +62,4 @@ ios/Pods
 
 # scripts
 scripts/image.ts
+dist

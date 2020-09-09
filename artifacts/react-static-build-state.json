@@ -1,0 +1,66 @@
+{
+  "prefetchRate": 5,
+  "maxThreads": null,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx",
+    ".ts",
+    ".tsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "silent": false,
+  "entry": "/Users/ice/incu_website/src/index.tsx",
+  "plugins": [
+    "react-static-plugin-typescript",
+    "react-static-plugin-stylus",
+    [
+      "/Users/ice/incu_website/node_modules/react-static-plugin-source-filesystem/node.api.js",
+      {
+        "location": "/Users/ice/incu_website/src/pages"
+      }
+    ],
+    "/Users/ice/incu_website/node_modules/react-static-plugin-reach-router/browser.api.js",
+    "/Users/ice/incu_website/node_modules/react-static-plugin-sitemap/dist/node.api.js",
+    "/Users/ice/incu_website"
+  ],
+  "paths": {
+    "ROOT": "/Users/ice/incu_website",
+    "SRC": "/Users/ice/incu_website/src",
+    "DIST": "/Users/ice/incu_website/dist",
+    "ASSETS": "/Users/ice/incu_website/dist",
+    "PLUGINS": "/Users/ice/incu_website/plugins",
+    "TEMP": "/Users/ice/incu_website/tmp",
+    "ARTIFACTS": "/Users/ice/incu_website/artifacts",
+    "PUBLIC": "/Users/ice/incu_website/public",
+    "NODE_MODULES": "/Users/ice/incu_website/node_modules",
+    "EXCLUDE_MODULES": "/Users/ice/incu_website/node_modules",
+    "PACKAGE": "/Users/ice/incu_website/package.json",
+    "HTML_TEMPLATE": "/Users/ice/incu_website/dist/index.html",
+    "STATIC_DATA": "/Users/ice/incu_website/dist/staticData"
+  },
+  "siteRoot": "/",
+  "basePath": "",
+  "publicPath": "/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "babelExcludes": [],
+  "devServer": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}

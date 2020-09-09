@@ -7,8 +7,7 @@ export default {
     Html,
     Head,
     Body,
-    children,
-    renderMeta
+    children
   }) => (
     <Html>
       <Head>

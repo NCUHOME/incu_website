@@ -2,7 +2,7 @@ import React from 'react'
 import { Root, Routes, Head } from 'react-static'
 import { Router } from '@reach/router'
 import { GeistProvider } from '@geist-ui/react'
-import { Transition, animated } from 'react-spring/renderprops'
+import { Transition, animated } from 'react-spring/web.cjs'
 import LoadingScreen from 'components/LoadingScreen'
 import './app.styl'
 
@@ -31,7 +31,7 @@ const App: React.FC = () => {
                       enter={{ transform: 'translateY(0px)', opacity: 1 }}
                       leave={{ transform: 'translateY(-100px)', opacity: 0 }}
                     >
-                      {() => props => {
+                      {() => (props: any) => {
                         return <animated.div style={props}>{element}</animated.div>
                       }}
                     </Transition>
