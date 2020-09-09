@@ -14,7 +14,7 @@ const App: React.FC = () => {
           <Head>
             <title>南大家园</title>
           </Head>
-          <React.Suspense fallback={<LoadingScreen />}>
+          <React.Suspense fallback={ <LoadingScreen />}>
             <Router>
               <Routes path="*" />
             </Router>

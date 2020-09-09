@@ -1,5 +1,4 @@
 import React from 'react'
-// import { Redirect } from '@reach/router'
 import PC from './PC'
 import Mobile from './Mobile'
 
