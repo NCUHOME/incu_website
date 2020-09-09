@@ -1,9 +1,14 @@
 import React from 'react'
-import { Redirect } from '@reach/router'
+// import { Redirect } from '@reach/router'
+import PC from './PC'
+import Mobile from './Mobile'
 
 export default () => {
   function isMobile() {
-    const userAgentInfo = navigator.userAgent
+    let userAgentInfo = ''
+    if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
+      userAgentInfo = navigator.userAgent
+    }
     const agents = ["Android", "iPhone",
       "SymbianOS", "Windows Phone",
       "iPad", "iPod"]
@@ -11,5 +16,9 @@ export default () => {
     return agents.some((item) => userAgentInfo.indexOf(item) > 0)
   }
 
-  return isMobile() ? <Redirect to={'./Mobile'}/> : <Redirect to={'./PC'}/>
+  return (
+    <>
+      {isMobile() ? <Mobile /> : <PC />}
+    </>
+  )
 };
