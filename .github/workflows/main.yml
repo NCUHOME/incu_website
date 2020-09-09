@@ -8,8 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on:
-      name: 120
+    runs-on: [self-host, Linux, X64]
     steps:
       - uses: actions/checkout@v2
       - name: install
