@@ -6,7 +6,9 @@ import LoadingScreen from 'components/LoadingScreen'
 import './app.styl'
 import ga from 'ga-lite'
 
-ga('UA-80324378-18')
+if (typeof navigator !== 'undefined') {
+  ga('UA-80324378-18')
+}
 
 const App: React.FC = () => {
 
