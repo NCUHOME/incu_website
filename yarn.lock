@@ -1127,8 +1127,8 @@
 
 "@types/google.analytics@^0.0.40":
   version "0.0.40"
-  resolved "https://registry.yarnpkg.com/@types/google.analytics/-/google.analytics-0.0.40.tgz#35526e9d78333423c430ade1c821ce54d0f0f850"
-  integrity sha512-R3HpnLkqmKxhUAf8kIVvDVGJqPtaaZlW4yowNwjOZUTmYUQEgHh8Nh5wkSXKMroNAuQM8gbXJHmNbbgA8tdb7Q==
+  resolved "https://registry.npm.taobao.org/@types/google.analytics/download/@types/google.analytics-0.0.40.tgz#35526e9d78333423c430ade1c821ce54d0f0f850"
+  integrity sha1-NVJunXgzNCPEMK3hyCHOVNDw+FA=
 
 "@types/history@*":
   version "4.7.7"
@@ -4046,8 +4046,8 @@ function-bind@^1.1.1:
 
 ga-lite@^2.1.0:
   version "2.1.0"
-  resolved "https://registry.yarnpkg.com/ga-lite/-/ga-lite-2.1.0.tgz#ce92abfbc54bdf541257055ddbc8ed7461e3cd05"
-  integrity sha512-GR9on+Nm7QuNzJU71VqHpGlYvGQfDq5l6Za8IYq8QnnmPWf8f3AVHkmtaRMLamCdHxTbu2gsSAP9srOqW3MuNQ==
+  resolved "https://registry.npm.taobao.org/ga-lite/download/ga-lite-2.1.0.tgz#ce92abfbc54bdf541257055ddbc8ed7461e3cd05"
+  integrity sha1-zpKr+8VL31QSVwVd28jtdGHjzQU=
 
 gensync@^1.0.0-beta.1:
   version "1.0.0-beta.1"
