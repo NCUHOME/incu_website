@@ -16,11 +16,9 @@ export enum SizeType {
 interface Props {
   btnType: DownloadType
   size?: SizeType
-  url: string
 }
 
-const Download: React.FC<Props> = ({ btnType, url, size = SizeType.mid }) => {
-
+const Download: React.FC<Props> = ({ btnType, size = SizeType.mid }) => {
   const image = () => {
     const imageMap: any = {
       appStore,
@@ -30,7 +28,14 @@ const Download: React.FC<Props> = ({ btnType, url, size = SizeType.mid }) => {
   }
 
   return (
-    <a className={size === 'large' ? "download-container-large" : "download-container-mid"} href={url}>
+    <a
+      className={size === 'large' ? 'download-container-large' : 'download-container-mid'}
+      href={
+        btnType === 'android'
+          ? 'https://incu-download.ncuos.com/iNCU_latest.apk'
+          : 'https://apps.apple.com/cn/app/%E5%8D%97%E5%A4%A7%E5%AE%B6%E5%9B%AD/id1209726561'
+      }
+    >
       <img src={image()} />
     </a>
   )

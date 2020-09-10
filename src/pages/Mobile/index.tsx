@@ -20,12 +20,10 @@ export default () => {
           <Download
             btnType={DownloadType.android}
             size={SizeType.large}
-            url={"https://incu-download.ncuos.com/iNCU_latest.apk"}
           />
           <Download
             btnType={DownloadType.appStore}
             size={SizeType.large}
-            url={"https://itunes.apple.com/us/app/%E5%8D%97%E5%A4%A7%E5%AE%B6%E5%9B%AD/id1209726561?mt=8"}
           />
         </div>
       </div>

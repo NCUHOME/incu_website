@@ -2,9 +2,6 @@ import React from 'react'
 import rolling from 'assets/image/Rolling.svg'
 import './index.styl'
 
-interface Props {
-}
-
 const tips = [
   '正在野区等宁王刷完 F6',
   '正在等待 App Store 审核',
@@ -15,7 +12,7 @@ const tips = [
   '正在信工楼找上课教室',
 ]
 
-const LoadingScreen: React.FC<Props> = () => {
+const LoadingScreen: React.FC = () => {
   return (
     <div className="loading-container">
       <img src={rolling} />

@@ -17,14 +17,8 @@ export default () => {
       <div className="title-container">
         <img src={title} className="title" draggable="false" />
         <div className="btn-container">
-          <Download
-            btnType={DownloadType.android}
-            url={"https://incu-download.ncuos.com/iNCU_latest.apk"}
-          />
-          <Download
-            btnType={DownloadType.appStore}
-            url={"https://itunes.apple.com/us/app/%E5%8D%97%E5%A4%A7%E5%AE%B6%E5%9B%AD/id1209726561?mt=8"}
-          />
+          <Download btnType={DownloadType.android} />
+          <Download btnType={DownloadType.appStore} />
         </div>
       </div>
     </div>
