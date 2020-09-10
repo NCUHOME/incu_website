@@ -64,3 +64,4 @@ ios/Pods
 scripts/image.ts
 dist
 artifacts
+tmp
