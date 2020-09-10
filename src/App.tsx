@@ -4,9 +4,9 @@ import { Router } from '@reach/router'
 import { GeistProvider } from '@geist-ui/react'
 import LoadingScreen from 'components/LoadingScreen'
 import './app.styl'
-import ReactGA from 'react-ga';
+import ga from 'ga-lite'
 
-ReactGA.initialize('UA-80324378-18');
+ga('UA-80324378-18')
 
 const App: React.FC = () => {
 
