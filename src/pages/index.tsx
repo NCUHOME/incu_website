@@ -1,23 +1,25 @@
 import React from 'react'
-import PC from './PC'
-import Mobile from './Mobile'
+import Download, { DownloadType } from 'components/Download'
+import logo from 'assets/image/logo.svg'
+import title from 'assets/image/title.svg'
+import './index.styl'
 
 export default () => {
-  function isMobile() {
-    let userAgentInfo = ''
-    if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
-      userAgentInfo = navigator.userAgent
-    }
-    const agents = ["Android", "iPhone",
-      "SymbianOS", "Windows Phone",
-      "iPad", "iPod"]
-
-    return agents.some((item) => userAgentInfo.indexOf(item) > 0)
-  }
-
   return (
-    <>
-      {isMobile() ? <Mobile /> : <PC />}
-    </>
+    <div style={{ height: '100vh' }}>
+      <div className="header-bar">
+        <img src={logo} className="logo" draggable="false" />
+      </div>
+      <div className="banner-contianer">
+        <div className="banner" />
+      </div>
+      <div className="title-container">
+        <img src={title} className="title" draggable="false" />
+        <div className="btn-container">
+          <Download btnType={DownloadType.android} />
+          <Download btnType={DownloadType.appStore} />
+        </div>
+      </div>
+    </div>
   )
-};
+}

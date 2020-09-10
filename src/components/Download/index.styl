@@ -1,9 +1,17 @@
-.download-container-large
-  margin-bottom 16px
-  img
-    width 40vw
+.download-container
+  @media (max-width 767px)
+    &
+      margin-bottom 16px
 
-.download-container-mid
-  margin-right 24px
+  @media (min-width 768px)
+    &
+      margin-right 24px
+
   img
-    width 14vw
+    @media (max-width 767px)
+      &
+        width 40vw
+
+    @media (min-width 768px)
+      &
+        width 14vw
