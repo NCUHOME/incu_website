@@ -53,7 +53,7 @@ jobs:
           host: ${{ secrets.IP }}
           username: ${{ secrets.USER_NAME }}
           key: ${{ secrets.SSH_KEY }}
-          source: "./dist"
+          source: "./dist/*"
           target: "/var/www/incu_website"
           
       
