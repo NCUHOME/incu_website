@@ -6,12 +6,13 @@ import LoadingScreen from 'components/LoadingScreen'
 import './app.styl'
 import ga from 'ga-lite'
 
-if (typeof navigator !== 'undefined') {
-  ga('create', 'UA-80324378-18', 'auto')
-  ga('send', 'pageview')
-}
-
 const App: React.FC = () => {
+  React.useEffect(() => {
+    if (typeof navigator !== 'undefined') {
+      ga('create', 'UA-80324378-18', 'auto')
+      ga('send', 'pageview')
+    }
+  }, [])
 
   return (
     <Root>
@@ -20,7 +21,7 @@ const App: React.FC = () => {
           <Head>
             <title>南大家园</title>
           </Head>
-          <React.Suspense fallback={ <LoadingScreen />}>
+          <React.Suspense fallback={<LoadingScreen />}>
             <Router>
               <Routes path="*" />
             </Router>
