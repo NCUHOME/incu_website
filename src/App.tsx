@@ -7,7 +7,8 @@ import './app.styl'
 import ga from 'ga-lite'
 
 if (typeof navigator !== 'undefined') {
-  ga('UA-80324378-18')
+  ga('create', 'UA-80324378-18', 'auto')
+  ga('send', 'pageview')
 }
 
 const App: React.FC = () => {
