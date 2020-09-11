@@ -1,7 +1,7 @@
 import React from 'react'
 import appStore from 'assets/image/app-store.svg'
 import android from 'assets/image/android.svg'
-// import ga from 'ga-lite'
+import ga from 'ga-lite'
 import './index.styl'
 
 export enum DownloadType {
@@ -23,14 +23,12 @@ const Download: React.FC<Props> = ({ btnType }) => {
   }, [btnType])
 
   const sendEvent = React.useCallback(() => {
-    if (typeof navigator !== 'undefined') {
-      ga('send', {
-        hitType: 'event',
-        eventCategory: 'Download Button',
-        eventAction: 'download',
-        eventLabel: btnType
-      })
-    }
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'Download Button',
+      eventAction: 'download',
+      eventLabel: btnType
+    })
   }, [btnType])
 
   return (
