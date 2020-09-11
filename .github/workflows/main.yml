@@ -10,14 +10,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: init ssh-key
-        run: |
-          eval $(ssh-agent -s)
-          echo "${{secrets.SSH_KEY}}" > deploy.key
-          mkdir -p ~/.ssh
-          chmod 0600 deploy.key
-          ssh-add deploy.key
-          echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
       - uses: actions/checkout@v2
       - name: Get yarn cache directory path	
         id: yarn-cache-dir-path	
@@ -40,7 +32,12 @@ jobs:
           yarn build
           
       - name: upload
-        run: |
-          sudo scp -r ./dist ${{secrets.USER_NAME}}@${{secrets.IP}}:/var/www/incu_website
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.IP }}
+          username: ${{ secrets.USER_NAME }}
+          key: ${{ secrets.SSH_KEY }}
+          source: "./dist"
+          target: "/var/www/incu_website"
           
       
