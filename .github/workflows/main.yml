@@ -47,12 +47,12 @@ jobs:
         run: |
           yarn build
 
-      - name: upload
-        uses: appleboy/scp-action@master
+      - name: deploy
+        uses: fangbinwei/aliyun-oss-website-action@v1
         with:
-          host: ${{ secrets.IP }}
-          username: ${{ secrets.USER_NAME }}
-          key: ${{ secrets.SSH_KEY }}
-          source: "./dist/*"
-          target: "/var/www/incu_website"
-          strip_components: 1
+         folder: dist
+         accessKeyId: ${{ secrets.ACCESSKEYID }}
+         accessKeySecret: ${{ secrets.ACCESSKEYSECRET }}
+         bucket: incu-site
+         endpoint: oss-cn-hangzhou.aliyuncs.com
+         skipSetting: true
