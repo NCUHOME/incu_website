@@ -1,10 +1,12 @@
 import React from 'react'
-import { Root, Routes, Head } from 'react-static'
 import { Router } from '@reach/router'
-import { GeistProvider } from '@geist-ui/react'
 import LoadingScreen from 'components/LoadingScreen'
 import './app.styl'
 import ga from 'ga-lite'
+import Index from 'pages/index'
+import Privacy from 'pages/privacy'
+import Terms from 'pages/terms'
+import Page404 from 'pages/404'
 
 const App: React.FC = () => {
   React.useEffect(() => {
@@ -15,20 +17,16 @@ const App: React.FC = () => {
   }, [])
 
   return (
-    <Root>
-      <GeistProvider>
-        <div className="content">
-          <Head>
-            <title>南大家园</title>
-          </Head>
-          <React.Suspense fallback={<LoadingScreen />}>
-            <Router>
-              <Routes path="*" />
-            </Router>
-          </React.Suspense>
-        </div>
-      </GeistProvider>
-    </Root>
+    <div className="content">
+      <React.Suspense fallback={<LoadingScreen />}>
+        <Router>
+          <Index path="/" />
+          <Privacy path="/privacy" />
+          <Terms path="/terms" />
+          <Page404 path="*" />
+        </Router>
+      </React.Suspense>
+    </div>
   )
 }
 
