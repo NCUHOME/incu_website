@@ -17,13 +17,14 @@
       flex-basis 100%
       margin-bottom 48px
       box-sizing: border-box
-      padding 0 16px
+      padding 0 32px
       max-width: calc((100vw - 32px) / 4)
 
       @media(max-width 1207px)
         max-width: calc((100vw - 32px) / 2)
 
       @media(max-width 548px)
+        padding 0 16px
         max-width: 100%
 
       h4
@@ -43,7 +44,11 @@
         color #ebedf0
         font-weight 400
         opacity .76
+        transition color 0.3s ease
+        &:hover
+          text-decoration underline
+          color #5485f7
 
 .copyright
   text-align center
-  margin 25px 0
+  margin-top 25px

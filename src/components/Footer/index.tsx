@@ -60,8 +60,8 @@ function Footer() {
               <h4>{link.title}</h4>
               <ul>
                 {link.items.map((item, j) => (
-                  <li>
-                    <a href={item.url} key={j}>
+                  <li key={j}>
+                    <a href={item.url} target="_blank" rel="noopener noreferrer">
                       {item.name}
                     </a>
                   </li>

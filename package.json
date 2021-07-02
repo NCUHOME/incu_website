@@ -2,7 +2,7 @@
   "name": "incu_website",
   "private": true,
   "scripts": {
-    "start": "vite",
+    "start": "vite --host",
     "build": "vite build"
   },
   "dependencies": {
