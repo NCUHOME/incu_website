@@ -1,13 +1,13 @@
 $bezier = cubic-bezier(0.4, 0, 0.2, 1)
 
-body
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
-  font-weight: 300
-  font-size: 16px
-  margin: 0
-  padding: 0
-  margin: 0
-  background #14142B
+body {
+  font-family 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
+  font-weight 300
+  font-size 16px
+  margin 0
+  padding 0
+  background #11152B
+}
 
 a
   text-decoration none
@@ -27,22 +27,39 @@ nav a
   padding 1rem
   display inline-block
 
-.content
-  background #14142B
-
 .animate-start
   animation showDown 1s $bezier, fadeIn 1s $bezier
   animation-fill-mode backwards
 
-@keyframes fadeIn
-  0%
+.animate-shake
+  animation shake-horizontal 4s ease infinite
+
+@keyframes fadeIn {
+  0% {
     opacity 0
-  100%
+  }
+  100% {
     opacity 1
+  }
+}
 
-@keyframes showDown
-  0%
+@keyframes showDown {
+  0% {
     transform translateY(-32px)
-
-  100%
+  }
+  100% {
     transform: translateY(0)
+  }
+}
+
+@keyframes shake-horizontal {
+  0% {
+    transform translateY(-10px)
+  }
+  50% {
+    transform translateY(0)
+  }
+  100% {
+    transform: translateY(-10px)
+  }
+}

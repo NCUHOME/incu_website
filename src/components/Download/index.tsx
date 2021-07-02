@@ -2,7 +2,7 @@ import React from 'react'
 import appStore from 'assets/image/app-store.svg'
 import android from 'assets/image/android.svg'
 import ga from 'ga-lite'
-import './index.styl'
+import styles from './index.module.styl'
 
 export enum DownloadType {
   android = 'android',
@@ -33,7 +33,7 @@ const Download: React.FC<Props> = ({ btnType }) => {
 
   return (
     <a
-      className="download-container"
+      className={styles['download-container']}
       href={
         btnType === 'android'
           ? 'https://incu-download.ncuos.com/iNCU_latest.apk'

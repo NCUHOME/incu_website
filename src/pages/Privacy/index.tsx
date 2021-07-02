@@ -1,12 +1,12 @@
-import React from 'react'
-import { useTitle } from 'react-use'
-import './terms.styl'
+import React from "react";
+import { useTitle } from "react-use";
+import styles from "../Terms/index.module.styl";
 
 export default () => {
-  useTitle('南大家园 用户隐私政策')
+  useTitle("南大家园 用户隐私政策");
 
   return (
-    <div className="terms">
+    <div className={styles.terms}>
       <h1>南大家园 用户隐私政策</h1>
       <p>
         <small>更新于 2020 年 11 月 27 日</small>
@@ -44,5 +44,5 @@ export default () => {
         在使用本软件网络服务进行网上交易时，您不可避免的要向交易对方或潜在的交易对方披露自己的个人信息，如联络方式或者邮政地址。请您妥善保护自己的个人信息，仅在必要的情形下向他人提供。如您发现自己的个人信息泄密，请您立即联络本软件客服，以便本软件采取相应措施。
       </p>
     </div>
-  )
-}
+  );
+};

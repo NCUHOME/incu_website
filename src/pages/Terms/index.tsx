@@ -1,12 +1,12 @@
 import React from 'react'
 import { useTitle } from 'react-use'
-import './terms.styl'
+import styles from './index.module.styl'
 
 export default () => {
   useTitle('南大家园 用户协议')
 
   return (
-    <div className="terms">
+    <div className={styles.terms}>
       <h1>南大家园 用户协议</h1>
       <p>
         <small>更新于 2020 年 11 月 27 日</small>
