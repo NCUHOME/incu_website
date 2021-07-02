@@ -1,5 +1,6 @@
 .header-bar
   display flex
+  box-sizing border-box
   justify-content flex-start
   position absolute
   top 0
@@ -14,7 +15,8 @@
       height 86px
       padding 0 36px 0 36px
 
-.banner-contianer
+.banner-container
+  animation-delay 0.3s
   @media (min-width 768px)
     &
       position absolute
@@ -45,6 +47,7 @@
 .title-container
   display flex
   flex-direction column
+  animation-delay 0.6s
 
   @media (max-width 767px)
     &

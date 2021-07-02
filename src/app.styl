@@ -1,3 +1,5 @@
+$bezier = cubic-bezier(0.4, 0, 0.2, 1)
+
 body
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
   font-weight: 300
@@ -5,7 +7,7 @@ body
   margin: 0
   padding: 0
   margin: 0
-  overflow hidden
+  background #14142B
 
 a
   text-decoration none
@@ -27,3 +29,20 @@ nav a
 
 .content
   background #14142B
+
+.animate-start
+  animation showDown 1s $bezier, fadeIn 1s $bezier
+  animation-fill-mode backwards
+
+@keyframes fadeIn
+  0%
+    opacity 0
+  100%
+    opacity 1
+
+@keyframes showDown
+  0%
+    transform translateY(-32px)
+
+  100%
+    transform: translateY(0)

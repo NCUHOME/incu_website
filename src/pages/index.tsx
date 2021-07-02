@@ -7,13 +7,13 @@ import './index.styl'
 export default () => {
   return (
     <div style={{ height: '100vh' }}>
-      <div className="header-bar">
+      <div className="header-bar animate-start">
         <img src={logo} className="logo" draggable="false" />
       </div>
-      <div className="banner-contianer">
+      <div className="banner-container animate-start">
         <div className="banner" />
       </div>
-      <div className="title-container">
+      <div className="title-container animate-start">
         <img src={title} className="title" draggable="false" />
         <div className="btn-container">
           <Download btnType={DownloadType.android} />
