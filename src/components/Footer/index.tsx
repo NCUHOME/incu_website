@@ -18,14 +18,14 @@ const data = [
   {
     title: "社区",
     items: [
-      { name: "家园工作室", url: "http://team.ncuos.com/" },
+      { name: "家园工作室", url: "https://team.ncuos.com/" },
       { name: "GitHub", url: "https://github.com/ncuhome" },
-      { name: "B站官方账号", url: "https://space.bilibili.com/444274979" },
+      { name: "哔哩哔哩", url: "https://space.bilibili.com/444274979" },
       {
         name: "知乎",
         url: "https://www.zhihu.com/people/nan-chang-da-xue-jia-yuan-gong-zuo-shi",
       },
-      { name: "Hackweek 2021", url: "http://hack.ncuos.com/" },
+      { name: "Hackweek 2021", url: "https://hack.ncuos.com/" },
     ],
   },
   {
@@ -44,8 +44,8 @@ const data = [
         url: "https://ncuhomer.feishu.cn/docs/doccnIosAt7Qeep4TE9pdhAeQTK",
       },
       { name: "南昌大学", url: "https://www.ncu.edu.cn/" },
-      { name: "南昌大学·学生工作处", url: "http://xgc.ncu.edu.cn/" },
-      { name: "南昌大学·信息工程学院", url: "http://ies.ncu.edu.cn/" },
+      { name: "南昌大学 · 学生工作处", url: "http://xgc.ncu.edu.cn/" },
+      { name: "南昌大学 · 信息工程学院", url: "http://ies.ncu.edu.cn/" },
     ],
   },
 ];
@@ -71,7 +71,7 @@ function Footer() {
           ))}
         </div>
         <div className={styles.copyright}>
-          Copyright © 2021 南大家园（iNCU）. By Ncuhome.
+          Copyright © {new Date().getFullYear()} 南大家园（iNCU）. By NCUHOME.
         </div>
       </div>
     </footer>
