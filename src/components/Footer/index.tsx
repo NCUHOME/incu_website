@@ -7,7 +7,7 @@ const data = [
     items: [
       {
         name: "家园四年",
-        url: "https://ncuhome.yuque.com/docs/share/08446ba1-0408-47e0-8250-794ce521adb4",
+        url: "https://ncuhome.yuque.com/books/share/e98759b8-1561-41a0-a80a-db3f3a65b727?",
       },
       {
         name: "用10MB内存做点更有意义的事儿",
