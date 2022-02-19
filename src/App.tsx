@@ -7,6 +7,7 @@ import Index from "pages/Home";
 import Privacy from "pages/Privacy";
 import Terms from "pages/Terms";
 import Page404 from "pages/404";
+import Transfer from "pages/Transfer"
 
 const App: React.FC = () => {
   React.useEffect(() => {
@@ -22,6 +23,7 @@ const App: React.FC = () => {
         <Index path="/" />
         <Privacy path="/privacy" />
         <Terms path="/terms" />
+        <Transfer path="/transfer"/>
         <Page404 path="*" />
       </Router>
     </React.Suspense>

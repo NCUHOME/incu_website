@@ -5,7 +5,7 @@ import styles from "./index.module.styl";
  * 判断是不是微信浏览器
  * @returns {boolean}
  */
-function isWechat(): boolean {
+export function isWechat(): boolean {
   const ua = navigator?.userAgent?.toLowerCase?.();
   return ua.match(/MicroMessenger/i)?.[0] === "micromessenger";
 }
