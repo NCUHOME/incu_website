@@ -20,7 +20,7 @@ const Transfer = () => {
         .then((res) => {
           const url = res.data.data;
           console.log(url);
-          location.href = url;
+          window.location.href = url;
         });
     } else {
       navigate("/");

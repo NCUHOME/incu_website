@@ -1,16 +1,17 @@
-import React from 'react'
-import rolling from 'assets/image/Rolling.svg'
-import './index.styl'
+import React from "react";
+import rolling from "assets/image/Rolling.svg";
+import "./index.styl";
 
 const tips = [
-  '正在野区等宁王刷完 F6',
-  '正在等待 App Store 审核',
-  '正在等待 iOS 编译',
-  '正在删库跑路',
-  '正在等待期末结果',
-  '正在学校里找共享单车',
-  '正在信工楼找上课教室',
-]
+  "正在发呆中...",
+  "正在等待 App Store 审核",
+  "正在等待 iOS 编译",
+  "正在删库跑路",
+  "正在等待期末结果",
+  "正在学校里找共享单车",
+  "正在返校的路上",
+  "正在信工楼找上课教室",
+];
 
 const LoadingScreen: React.FC = () => {
   return (
@@ -18,7 +19,7 @@ const LoadingScreen: React.FC = () => {
       <img src={rolling} />
       <span>{tips[Math.floor(Math.random() * tips.length)]}</span>
     </div>
-  )
-}
+  );
+};
 
-export default LoadingScreen
+export default LoadingScreen;
