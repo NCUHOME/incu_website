@@ -65,3 +65,10 @@ scripts/image.ts
 dist
 artifacts
 tmp
+
+# Yarn
+/.yarn/*
+!/.yarn/patches
+!/.yarn/plugins
+!/.yarn/releases
+!/.yarn/sdks
