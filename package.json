@@ -8,14 +8,15 @@
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
+    "arch": "^2.2.0",
     "axios": "^0.26.0",
     "clsx": "^1.1.1",
     "ga-lite": "^2.1.0",
     "preact": "^10.6.6",
     "query-string": "^7.1.1",
-    "react-use": "^15.3.3",
+    "react-use": "^17.3.2",
     "stylus": "^0.54.8",
-    "vite": "^2.3.8",
+    "vite": "^2.8.4",
     "vite-tsconfig-paths": "^3.3.13"
   },
   "devDependencies": {
