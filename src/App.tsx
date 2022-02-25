@@ -1,13 +1,14 @@
 import React from "react";
-import { Router } from "@reach/router";
 import LoadingScreen from "components/LoadingScreen";
-import "./app.styl";
 import ga from "ga-lite";
 import Index from "pages/Home";
 import Privacy from "pages/Privacy";
 import Terms from "pages/Terms";
 import Page404 from "pages/404";
 import Transfer from "pages/Transfer"
+import { Route, Switch } from "wouter";
+
+import "./app.styl";
 
 const App: React.FC = () => {
   React.useEffect(() => {
@@ -19,13 +20,13 @@ const App: React.FC = () => {
 
   return (
     <React.Suspense fallback={<LoadingScreen />}>
-      <Router>
-        <Index path="/" />
-        <Privacy path="/privacy" />
-        <Terms path="/terms" />
-        <Transfer path="/transfer"/>
-        <Page404 path="*" />
-      </Router>
+      <Switch>
+        <Route path="/" component={Index} />
+        <Route path="/privacy" component={Privacy} />
+        <Route path="/terms" component={Terms} />
+        <Route path="/transfer/:id" component={Transfer} />
+        <Route component={Page404} />
+      </Switch>
     </React.Suspense>
   );
 };

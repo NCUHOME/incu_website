@@ -21,7 +21,8 @@
       "containers/*": ["src/containers/*"],
       "pages/*": ["src/pages/*"],
       "assets/*": ["src/assets/*"],
-      "types/*": ["types/*"]
+      "types/*": ["types/*"],
+      "utils/*": ["src/utils/*"],
     },
     "lib": ["dom", "es2015", "es2016"],
   },
