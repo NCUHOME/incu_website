@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "arch": "^2.2.0",
-    "axios": "^0.26.0",
     "clsx": "^1.1.1",
     "ga-lite": "^2.1.0",
     "preact": "^10.6.6",

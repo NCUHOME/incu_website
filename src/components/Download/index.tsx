@@ -2,7 +2,6 @@ import React from 'react'
 import appStore from 'assets/image/app-store.svg'
 import android from 'assets/image/android.svg'
 import ga from 'ga-lite'
-import { ANDROID_DOWNLOAD_URL, IOS_DOWNLOAD_URL } from 'utils/constants'
 import styles from './index.module.styl'
 
 export enum DownloadType {
@@ -12,9 +11,10 @@ export enum DownloadType {
 
 interface Props {
   btnType: DownloadType
+  url?: string
 }
 
-const Download: React.FC<Props> = ({ btnType }) => {
+const Download: React.FC<Props> = ({ btnType, url }) => {
   const image = React.useMemo(() => {
     const imageMap: any = {
       appStore,
@@ -35,7 +35,7 @@ const Download: React.FC<Props> = ({ btnType }) => {
   return (
     <a
       className={styles['download-container']}
-      href={btnType === 'android' ? ANDROID_DOWNLOAD_URL : IOS_DOWNLOAD_URL}
+      href={url}
       onClick={() => sendEvent()}
     >
       <img src={image} />
