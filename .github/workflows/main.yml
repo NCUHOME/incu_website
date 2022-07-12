@@ -27,8 +27,6 @@ jobs:
             
       - name: install
         run: yarn
-        if: |
-          steps.cache-yarn-cache.outputs.cache-hit != 'true'
 
       - name: build
         run: |
