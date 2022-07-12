@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./index.module.styl";
 import { useWindowSize } from "react-use";
-import clsx from "clsx";
 
 const randomNumber = (max: number, min: number) =>
   Math.floor(Math.random() * (max - min + 1) + min);
@@ -9,7 +8,7 @@ const randomNumber = (max: number, min: number) =>
 function Background() {
   const { width, height } = useWindowSize();
   return (
-    <div className={clsx(styles.stars, "animate-start")}>
+    <div className={`${styles.stars} animate-start`}>
       {Array.from({ length: 30 }).map((_item, i) => (
         <div
           className={styles.star}
