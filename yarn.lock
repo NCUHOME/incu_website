@@ -548,13 +548,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"arch@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "arch@npm:2.2.0"
-  checksum: e21b7635029fe8e9cdd5a026f9a6c659103e63fff423834323cdf836a1bb240a72d0c39ca8c470f84643385cf581bd8eda2cad8bf493e27e54bd9783abe9101f
-  languageName: node
-  linkType: hard
-
 "are-we-there-yet@npm:^3.0.0":
   version: 3.0.0
   resolution: "are-we-there-yet@npm:3.0.0"
@@ -1359,7 +1352,6 @@ __metadata:
     "@types/google.analytics": ^0.0.40
     "@types/react": ^17.0.39
     "@types/react-dom": ^17.0.11
-    arch: ^2.2.0
     babel-plugin-transform-hook-names: ^1.0.2
     clsx: ^1.1.1
     ga-lite: ^2.1.0
@@ -2389,7 +2381,7 @@ __metadata:
 
 "typescript@patch:typescript@^3.5.3#~builtin<compat/typescript>":
   version: 3.9.7
-  resolution: "typescript@patch:typescript@npm%3A3.9.7#~builtin<compat/typescript>::version=3.9.7&hash=bda367"
+  resolution: "typescript@patch:typescript@npm%3A3.9.7#~builtin<compat/typescript>::version=3.9.7&hash=7ad353"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
