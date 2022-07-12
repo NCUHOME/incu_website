@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Download, { DownloadType } from "components/Download";
-import logo from "assets/image/logo.svg";
-import title from "assets/image/title.svg";
+import logo from "assets/image/logo.svgo.svg";
+import title from "assets/image/title.svgo.svg";
 import styles from "./index.module.styl";
 import Background from "components/Background";
 import { IOS_DOWNLOAD_URL } from "utils/constants";

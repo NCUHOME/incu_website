@@ -1,6 +1,6 @@
 import React from 'react'
-import appStore from 'assets/image/app-store.svg'
-import android from 'assets/image/android.svg'
+import appStore from 'assets/image/app-store.svgo.svg'
+import android from 'assets/image/android.svgo.svg'
 import ga from 'ga-lite'
 import styles from './index.module.styl'
 

@@ -1,5 +1,5 @@
 import React from "react";
-import rolling from "assets/image/Rolling.svg";
+import rolling from "assets/image/Rolling.svgo.svg";
 import "./index.styl";
 
 const tips = [
