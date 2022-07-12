@@ -1,9 +1,8 @@
 import React from "react";
-import { useTitle } from "react-use";
 import styles from "../Terms/index.module.styl";
 
 export default () => {
-  useTitle("南大家园 用户隐私政策");
+  document.title = "南大家园 用户隐私政策";
 
   return (
     <div className={styles.terms}>
