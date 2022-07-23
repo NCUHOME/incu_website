@@ -9,7 +9,7 @@ function Background() {
   const { width, height } = useWindowSize();
   return (
     <div className={`${styles.stars} animate-start`}>
-      {Array(30).map((_item, i) => (
+      {Array.from({ length: 30 }).map((_item, i) => (
         <div
           className={styles.star}
           key={i}
