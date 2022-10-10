@@ -976,6 +976,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"check-platform@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "check-platform@npm:1.0.0"
+  checksum: d7270bf6bfee23666c4eaca985ac7b3292ed08fafb7196d4b87ce8de5c0839d7393dd7599c83d4decdf9f81b13a8d43df52816ee485c3f241febfed3d60a6bb7
+  languageName: node
+  linkType: hard
+
 "chownr@npm:^2.0.0":
   version: 2.0.0
   resolution: "chownr@npm:2.0.0"
@@ -1681,6 +1688,7 @@ __metadata:
     "@types/react": ^18.0.15
     "@types/react-dom": ^18.0.6
     babel-plugin-transform-hook-names: ^1.0.2
+    check-platform: ^1.0.0
     ga-lite: ^2.1.6
     preact: ^10.9.0
     react-use: ^17.4.0

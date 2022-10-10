@@ -7,6 +7,7 @@
     "build": "vite build"
   },
   "dependencies": {
+    "check-platform": "^1.0.0",
     "ga-lite": "^2.1.6",
     "preact": "^10.9.0",
     "react-use": "^17.4.0",
