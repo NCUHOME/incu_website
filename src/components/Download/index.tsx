@@ -30,6 +30,10 @@ const Download: React.FC<Props> = ({ btnType, url }) => {
       eventAction: 'download',
       eventLabel: btnType
     })
+    // NOTE: fallback for iOS
+    if (btnType === DownloadType.appStore) {
+      window.location.href = url
+    }
   }, [btnType])
 
   return (
