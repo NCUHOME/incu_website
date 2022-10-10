@@ -18,7 +18,7 @@ export default () => {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} onContextMenu={e => e.preventDefault()}>
       <Background />
       <div className={`${styles["header-bar"]} animate-start`}>
         <img src={logo} className={styles.logo} draggable="false" />
