@@ -1,7 +1,5 @@
 import { FunctionComponent } from "preact";
 import { useEffect } from 'preact/hooks';
-import { Suspense } from 'preact/compat';
-import LoadingScreen from "components/LoadingScreen";
 import ga from "ga-lite";
 import Index from "pages/Home";
 import Privacy from "pages/Privacy";
@@ -21,15 +19,13 @@ const App: FunctionComponent = () => {
   }, []);
 
   return (
-    <Suspense fallback={<LoadingScreen />}>
-      <Switch>
-        <Route path="/" component={Index} />
-        <Route path="/privacy" component={Privacy} />
-        <Route path="/terms" component={Terms} />
-        <Route path="/transfer/:id" component={Transfer} />
-        <Route component={Page404} />
-      </Switch>
-    </Suspense>
+    <Switch>
+      <Route path="/" component={Index} />
+      <Route path="/privacy" component={Privacy} />
+      <Route path="/terms" component={Terms} />
+      <Route path="/transfer/:id" component={Transfer} />
+      <Route component={Page404} />
+    </Switch>
   );
 };
 
