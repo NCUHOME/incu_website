@@ -16,7 +16,7 @@ interface Props {
   alt: string
 }
 
-const Download: FunctionComponent<Props> = ({ btnType, url }) => {
+const Download: FunctionComponent<Props> = ({ btnType, url, alt }) => {
   const image = useMemo(() => {
     const imageMap: any = {
       appStore,
