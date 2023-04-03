@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./index.module.styl";
 import { isAlipay, isDingTalk, isWeChat, isWeCom } from 'check-platform'
 import { UA } from 'check-platform/es/Platform'

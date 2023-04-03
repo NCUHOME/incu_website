@@ -1,4 +1,3 @@
-import React from "react";
 import Splash from "components/Splash";
 import Footer from "components/Footer";
 import Tips from "components/Tips";

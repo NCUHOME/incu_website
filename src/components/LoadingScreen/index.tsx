@@ -1,4 +1,4 @@
-import React from "react";
+import { FunctionComponent } from "preact";
 import rolling from "assets/image/Rolling.svgo.svg";
 import "./index.styl";
 
@@ -13,7 +13,7 @@ const tips = [
   "正在信工楼找上课教室",
 ];
 
-const LoadingScreen: React.FC = () => {
+const LoadingScreen: FunctionComponent = () => {
   return (
     <div className="loading-container">
       <img src={rolling} />

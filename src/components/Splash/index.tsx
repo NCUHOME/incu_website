@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "preact/hooks";
 import Download, { DownloadType } from "components/Download";
 import logo from "assets/image/logo.svgo.svg";
 import title from "assets/image/title.svgo.svg";
@@ -21,13 +21,13 @@ export default () => {
     <div className={styles.container} onContextMenu={e => e.preventDefault()}>
       <Background />
       <div className={`${styles["header-bar"]} animate-start`}>
-        <img src={logo} className={styles.logo} draggable="false" />
+        <img src={logo} className={styles.logo} draggable={false} />
       </div>
       <div className={`${styles["banner-container"]} animate-start`}>
         <div className={`${styles.banner} animate-shake`} />
       </div>
       <div className={`${styles["title-container"]} animate-start`}>
-        <img src={title} className={styles.title} draggable="false" />
+        <img src={title} className={styles.title} draggable={false} />
         <div className={styles["btn-container"]}>
           <Download btnType={DownloadType.android} url={url} />
           <Download btnType={DownloadType.appStore} url={IOS_DOWNLOAD_URL} />

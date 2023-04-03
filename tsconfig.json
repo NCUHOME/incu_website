@@ -4,6 +4,7 @@
     "target": "esnext",
     "module": "esnext",
     "jsx": "preserve",
+    "jsxImportSource": "preact",
     "allowJs": false,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,

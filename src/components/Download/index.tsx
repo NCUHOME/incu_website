@@ -1,4 +1,5 @@
-import React from 'react'
+import { FunctionComponent } from 'preact'
+import { useMemo, useCallback } from 'preact/hooks'
 import appStore from 'assets/image/app-store.svgo.svg'
 import android from 'assets/image/android.svgo.svg'
 import ga from 'ga-lite'
@@ -14,8 +15,8 @@ interface Props {
   url?: string
 }
 
-const Download: React.FC<Props> = ({ btnType, url }) => {
-  const image = React.useMemo(() => {
+const Download: FunctionComponent<Props> = ({ btnType, url }) => {
+  const image = useMemo(() => {
     const imageMap: any = {
       appStore,
       android
@@ -23,7 +24,7 @@ const Download: React.FC<Props> = ({ btnType, url }) => {
     return imageMap[btnType]
   }, [btnType])
 
-  const sendEvent = React.useCallback(() => {
+  const sendEvent = useCallback(() => {
     ga('send', {
       hitType: 'event',
       eventCategory: 'Download Button',
