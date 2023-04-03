@@ -21,16 +21,16 @@ export default () => {
     <div className={styles.container} onContextMenu={e => e.preventDefault()}>
       <Background />
       <div className={`${styles["header-bar"]} animate-start`}>
-        <img src={logo} className={styles.logo} draggable={false} />
+        <img src={logo} alt="iNCU APP Logo" className={styles.logo} draggable={false} />
       </div>
       <div className={`${styles["banner-container"]} animate-start`}>
         <div className={`${styles.banner} animate-shake`} />
       </div>
       <div className={`${styles["title-container"]} animate-start`}>
-        <img src={title} className={styles.title} draggable={false} />
+        <img src={title} alt="南大家园 5.0 你的校园生活轨迹" className={styles.title} draggable={false} />
         <div className={styles["btn-container"]}>
-          <Download btnType={DownloadType.android} url={url} />
-          <Download btnType={DownloadType.appStore} url={IOS_DOWNLOAD_URL} />
+          <Download btnType={DownloadType.android} url={url} alt="Android 下载" />
+          <Download btnType={DownloadType.appStore} url={IOS_DOWNLOAD_URL} alt="App Store 下载" />
         </div>
       </div>
     </div>

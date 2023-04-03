@@ -13,6 +13,7 @@ export enum DownloadType {
 interface Props {
   btnType: DownloadType
   url?: string
+  alt: string
 }
 
 const Download: FunctionComponent<Props> = ({ btnType, url }) => {
@@ -43,7 +44,7 @@ const Download: FunctionComponent<Props> = ({ btnType, url }) => {
       href={url}
       onClick={() => sendEvent()}
     >
-      <img src={image} />
+      <img src={image} alt={alt} />
     </a>
   )
 }
