@@ -1,7 +1,6 @@
 {
   "name": "incu_website",
   "private": true,
-  "packageManager": "yarn@3.2.1",
   "scripts": {
     "start": "vite --host",
     "build": "vite build"
