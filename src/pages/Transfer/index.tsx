@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { useLocation, Params } from "wouter";
+import { useLocation, Params } from "wouter-preact";
 import LoadingScreen from "components/LoadingScreen";
 import Tips from "components/Tips";
 

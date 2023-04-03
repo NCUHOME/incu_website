@@ -6,7 +6,7 @@ import Privacy from "pages/Privacy";
 import Terms from "pages/Terms";
 import Page404 from "pages/404";
 import Transfer from "pages/Transfer"
-import { Route, Switch } from "wouter";
+import { Route, Switch } from "wouter-preact";
 
 import "./app.styl";
 
