@@ -24,24 +24,12 @@ dependencies:
     version: 2.10.0-alpha.1(preact@10.13.2)
 
 devDependencies:
-  '@babel/core':
-    specifier: ^7.21.4
-    version: 7.21.4
-  '@babel/plugin-transform-react-jsx':
-    specifier: ^7.21.0
-    version: 7.21.0(@babel/core@7.21.4)
-  '@babel/plugin-transform-react-jsx-development':
-    specifier: ^7.18.6
-    version: 7.18.6(@babel/core@7.21.4)
   '@preact/preset-vite':
     specifier: ^2.5.0
     version: 2.5.0(@babel/core@7.21.4)(preact@10.13.2)(vite@4.2.1)
   '@types/google.analytics':
     specifier: ^0.0.42
     version: 0.0.42
-  babel-plugin-transform-hook-names:
-    specifier: ^1.0.2
-    version: 1.0.2(@babel/core@7.21.4)
   typescript:
     specifier: ^5.0.3
     version: 5.0.3

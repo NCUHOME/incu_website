@@ -15,12 +15,8 @@
     "wouter-preact": "2.10.0-alpha.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.4",
-    "@babel/plugin-transform-react-jsx": "^7.21.0",
-    "@babel/plugin-transform-react-jsx-development": "^7.18.6",
     "@preact/preset-vite": "^2.5.0",
     "@types/google.analytics": "^0.0.42",
-    "babel-plugin-transform-hook-names": "^1.0.2",
     "typescript": "^5.0.3"
   }
 }
