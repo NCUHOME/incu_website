@@ -1,12 +1,11 @@
 import React from "react";
 import styles from "./index.module.styl";
-import { useWindowSize } from "react-use";
 
 const randomNumber = (max: number, min: number) =>
   Math.floor(Math.random() * (max - min + 1) + min);
 
 function Background() {
-  const { width, height } = useWindowSize();
+  const { width, height } = { width: innerWidth, height: innerHeight};
   return (
     <div className={`${styles.stars} animate-start`}>
       {Array.from({ length: 30 }).map((_item, i) => (
