@@ -8,7 +8,7 @@ import { IOS_DOWNLOAD_URL } from "utils/constants";
 
 export default () => {
   /// 默认版本号
-  const [url, setUrl] = useState('https://incu-download.ncuos.com/iNCU_5.13.6.apk');
+  const [url, setUrl] = useState('https://incu-download.ncuos.com/iNCU_5.13.10.apk');
 
   useEffect(() => {
     fetch("https://plot.ncuos.com/api/update")
