@@ -24,14 +24,14 @@ const data = [
         name: "知乎",
         url: "https://www.zhihu.com/people/nan-chang-da-xue-jia-yuan-gong-zuo-shi",
       },
-      { name: "Hackweek 2021", url: "https://hack.ncuos.com/" },
+      { name: "Hackweek", url: "https://hack.ncuos.com/" },
     ],
   },
   {
     title: "生态",
     items: [
-      { name: "云家园", url: "https://ncuos.com" },
-      { name: "US", url: "http://usv2.ncuos.com/" },
+      { name: "云家园", url: "https://ncuos.ncu.edu.cn" },
+      // { name: "US", url: "http://usv2.ncuos.com/" },
       { name: "语燕", url: "https://zhuanlan.zhihu.com/p/114508611" },
     ],
   },
@@ -40,7 +40,7 @@ const data = [
     items: [
       {
         name: "加入我们",
-        url: "https://ncuhomer.feishu.cn/docs/doccnIosAt7Qeep4TE9pdhAeQTK",
+        url: "https://u.ncuos.com/joinus",
       },
       { name: "南昌大学", url: "https://www.ncu.edu.cn/" },
       { name: "南昌大学 · 学生工作处", url: "http://xgc.ncu.edu.cn/" },
