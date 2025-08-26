@@ -43,8 +43,8 @@ const data = [
         url: "https://u.ncuos.com/joinus",
       },
       { name: "南昌大学", url: "https://www.ncu.edu.cn/" },
-      { name: "南昌大学 · 学生工作处", url: "http://xgc.ncu.edu.cn/" },
-      { name: "南昌大学 · 信息工程学院", url: "http://ies.ncu.edu.cn/" },
+      { name: "南昌大学 · 学生工作处", url: "https://xgc.ncu.edu.cn/" },
+      { name: "南昌大学 · 信息工程学院", url: "https://ies.ncu.edu.cn/" },
     ],
   },
 ];
