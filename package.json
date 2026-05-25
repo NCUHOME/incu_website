@@ -18,5 +18,10 @@
     "@preact/preset-vite": "^2.5.0",
     "@types/google.analytics": "^0.0.42",
     "typescript": "^5.0.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }
