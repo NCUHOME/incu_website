@@ -8,20 +8,15 @@
   "dependencies": {
     "check-platform": "^1.0.0",
     "ga-lite": "^2.1.6",
-    "preact": "^10.13.2",
-    "stylus": "^0.59.0",
-    "vite": "^4.2.1",
-    "vite-tsconfig-paths": "^4.0.7",
-    "wouter-preact": "2.10.0-alpha.1"
+    "preact": "^10.29.2",
+    "stylus": "^0.64.0",
+    "vite": "^8.0.14",
+    "vite-tsconfig-paths": "^6.1.1",
+    "wouter-preact": "3.10.0"
   },
   "devDependencies": {
-    "@preact/preset-vite": "^2.5.0",
-    "@types/google.analytics": "^0.0.42",
-    "typescript": "^5.0.3"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ]
+    "@preact/preset-vite": "^2.10.5",
+    "@types/google.analytics": "^0.0.46",
+    "typescript": "^6.0.3"
   }
 }
